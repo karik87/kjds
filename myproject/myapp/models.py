@@ -26,8 +26,7 @@ class Team(models.Model):
 
 
 class Person(models.Model):
-    # Shift + Alt + strzałka góra/dół
-    firstname = models.CharField(max_length=60, verbose_name="First Name")
+    firstname = models.CharField(max_length=60)
     lastname = models.CharField(max_length=60)
     shirt_size = models.CharField(max_length=1, choices=SHIRT_SIZES, default=SHIRT_SIZES[0][0])
     month_added = models.IntegerField(choices=MONTHS.choices, default=MONTHS.choices[0][0])
